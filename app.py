@@ -15,9 +15,6 @@ password = "password"
 with open("db.json", "r") as f:
     JSONtoken = load(f)["token"]
 
-class Auth(BaseModel):
-    password: str
-
 if not os.path.exists(UPLOAD_DIRECTORY):
     os.makedirs(UPLOAD_DIRECTORY)
 
